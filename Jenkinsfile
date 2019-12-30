@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
                 bat 'mvn clean install'
-                bat "docker build . -t demodocker: 1"
+                bat "docker build -t demo ."
             }
         }
     }
